@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <title>Sigma Phi Delta Chapter Attendance</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="/images/logo.png" alt="logo" id="logo">
+    </div>
+
+    <!-- <form id="form" action="http://localhost:<%- port %>/" method="post"> -->
+    <form id="form" action="https://spd-attendance.onrender.com/" method="post">
+        <h2>Attendance Form</h2>
+
+        <label for="name"><strong>Name: </strong> (Look for autocomplete, if your name is not there text me)</label>
+        <input value="Erik Pfeffer" type="text" list="names" id="name" name="name" required
+            placeholder="Ex: Vikas Reddy">
+        <datalist id="names"></datalist>
+
+        <div class="radio-group">
+            <label><strong>Will you be attending?</strong></label>
+
+            <label for="yes">Yes</label>
+            <input type="radio" id="yes" name="attending" value="yes" required checked>
+            <label for="no">No</label>
+            <input type="radio" id="no" name="attending" value="no" required>
+
+        </div>
+
+        <label for="excuse"><strong>Excuse:</strong> (type n/a if attending)</label>
+        <input type="text" name="excuse" id="excuse" required value="n/a">
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script type="module" src="/index.js"></script>
+</body>
+
+</html>
