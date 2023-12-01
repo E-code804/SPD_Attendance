@@ -19,22 +19,21 @@
         <h2>Attendance Form</h2>
 
         <label for="name"><strong>Name: </strong> (Look for autocomplete, if your name is not there text me)</label>
-        <input value="Erik Pfeffer" type="text" list="names" id="name" name="name" required
-            placeholder="Ex: Vikas Reddy">
+        <input type="text" list="names" id="name" name="name" required placeholder="Ex: Vikas Reddy">
         <datalist id="names"></datalist>
 
         <div class="radio-group">
             <label><strong>Will you be attending?</strong></label>
 
             <label for="yes">Yes</label>
-            <input type="radio" id="yes" name="attending" value="yes" required checked>
+            <input type="radio" id="yes" name="attending" value="yes" required>
             <label for="no">No</label>
             <input type="radio" id="no" name="attending" value="no" required>
 
         </div>
 
         <label for="excuse"><strong>Excuse:</strong> (type n/a if attending)</label>
-        <input type="text" name="excuse" id="excuse" required value="n/a">
+        <input type="text" name="excuse" id="excuse" required>
 
         <button type="submit">Submit</button>
     </form>
